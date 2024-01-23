@@ -10,12 +10,17 @@ const routes = [
     redirect: "/inicio",
   },
   {
-    path: "/",
-    component: {
-      render(c) {
-        return c("router-view");
-      },
-    },
+    path: "*",
+    component: () => import("../views/ErrorPages/Error404.vue"),
+  },
+  {
+    path: "/formulario",
+    name: "formulario",
+    component: () => import("../components/Formulario.vue"),
+  },
+  {
+    path: "/inicio",
+    component: () => import("../components/Inicio.vue"),
     children: [
       {
         path: "/tienda-de-juguetes",
