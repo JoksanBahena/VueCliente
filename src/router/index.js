@@ -14,6 +14,11 @@ const routes = [
     component: () => import("../views/ErrorPages/Error404.vue"),
   },
   {
+    path: "/paginacion",
+    name: "paginacion",
+    component: () => import("../components/Persona.vue"),
+  },
+  {
     path: "/formulario",
     name: "formulario",
     component: () => import("../components/Formulario.vue"),

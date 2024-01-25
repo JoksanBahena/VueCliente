@@ -7,7 +7,7 @@
       href="http://localhost:5173/#/tienda-de-juguetes/juegos-electronicos"
       >Juegos electronicos</b-button
     >
-    <b-button variant="success">Juegos de mesa</b-button>
+    <b-button variant="success" href="http://localhost:5173/#/paginacion">Juegos de mesa</b-button>
   </div>
 </template>
 
