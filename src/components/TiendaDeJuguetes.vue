@@ -30,6 +30,7 @@
 <script>
 import { WidgetInstance } from "friendly-challenge";
 import { ref } from "vue";
+import CaptchaService from "../services/captchaService";
 
 export default {
   data() {
@@ -51,6 +52,10 @@ export default {
   },
   methods: {
     submitForm: () => {},
+    async verifyCaptcha(solution) {
+      let response = await CaptchaService.verificarCaptcha(solution);
+      console.log(response);
+    },
     doneCallback: (solution) => {
       console.log("Captcha was solved. The form can be submitted.");
       console.log(solution);

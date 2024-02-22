@@ -27,7 +27,7 @@ const routes = [
     path: "/inicio",
     component: () => import("../components/Inicio.vue"),
     children: [
-      {
+      { 
         path: "/tienda-de-juguetes",
         name: "juguetes",
         component: () => import("../components/TiendaDeJuguetes.vue"),
